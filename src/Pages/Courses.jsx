@@ -45,10 +45,26 @@ const Courses = () => {
     }
   ];
   return (
+    // <>
+    // <div className="contain">
+    //   <h1>Courses focused on building strong foundational skills</h1>
+    // <div className="cards-container containerCourses">
+    //     {cardsData.map((card, index) => (
+    //       <Card 
+    //         key={index} 
+    //         title={card.title} 
+    //         content={card.content} 
+    //         image={card.image} 
+    //       />
+    //     ))}
+    //   </div>
+    //   </div>
+    // </>
     <>
-    <div className="contain">
-      <h1>Courses focused on building strong foundational skills</h1>
-    <div className="cards-container containerCourses">
+    <section className="p-8  dark:bg-gray-800  dark:text-white transition-colors duration-300">
+      <h2 className="text-3xl font-bold text-center mb-6">Our Courses</h2>
+      <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        {/* Box 1 */}
         {cardsData.map((card, index) => (
           <Card 
             key={index} 
@@ -58,7 +74,7 @@ const Courses = () => {
           />
         ))}
       </div>
-      </div>
+    </section>
     </>
   )
 }

@@ -5,17 +5,18 @@ import App from './App.jsx'
 import {createBrowserRouter, BrowserRouter, Router, RouterProvider, createRoutesFromElements, Route} from 'react-router-dom'
 import Hero from './components/Hero.jsx'
 import Courses from './Pages/Courses.jsx'
-import Login from './Pages/Login.jsx'
-import Signup from './Pages/Signup.jsx'
+
 import About from './Pages/About.jsx'
+import LoginSignupForm from './Pages/LoginSignupForm.jsx'
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App/>}>
       <Route path='' element={<Hero/>}/>
       <Route path='Courses' element={<Courses/>}/>
-      <Route path='Login' element={<Login/>}/>
-      <Route path='Signup' element={<Signup/>}/>
+      <Route path='Login' element={<LoginSignupForm />}/>
+      <Route path='Contact' element={<LoginSignupForm />}/>
       <Route path='About' element={<About/>}/>
 
 
