@@ -59,10 +59,10 @@ const ThemeToggle = () => {
         onClick={toggleTheme}
         className="bg-gray-200 dark:bg-gray-800 w-1 mr-4 focus:outline-none"
       >
-        {theme ? (
-            <span className="text-yellow-500">☀️</span> // Sun icon
+        {theme == "light" ? (
+            <span className="text-yellow-500">🌙</span> // Sun icon
         ) : (
-            <span className="text-yellow-500">🌙</span> // Moon icon
+            <span className="text-yellow-500">☀️</span> // Moon icon
         )}
       </button>
     </div>
